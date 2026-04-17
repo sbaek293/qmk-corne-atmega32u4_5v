@@ -42,27 +42,32 @@ Corne(crkbd)용 QMK 키맵입니다.
 - Rainbow Swirl (레인보우 소용돌이)
 - Static Gradient (정적 그라디언트)
 
-## 빌드 예시
+## 로컬 풀 빌드
 
-QMK Firmware 루트에서 아래처럼 빌드합니다.
+이 저장소 단독으로 빌드할 수 있도록 `vial-qmk` 소스를 `third_party/vial-qmk`에 자동으로 내려받아 빌드합니다.
+
+- `qmk` CLI가 설치되어 있으면 로컬 도구체인으로 빌드
+- `qmk` CLI가 없으면 Docker(`qmkfm/qmk_cli` 이미지)로 빌드
 
 ### 42키 (기본값)
 
 ```bash
-qmk compile -kb crkbd/rev1 -km sbaek293
-```
-
-또는 명시적으로:
-
-```bash
-qmk compile -kb crkbd/rev1 -km sbaek293 -e KEY_LAYOUT=42
+make build-42
 ```
 
 ### 36키
 
 ```bash
-qmk compile -kb crkbd/rev1 -km sbaek293 -e KEY_LAYOUT=36
+make build-36
 ```
+
+### 42/36 전체 빌드
+
+```bash
+make build-all
+```
+
+> 참고: 첫 빌드 시 `scripts/bootstrap_qmk.sh`가 `vial-qmk`(submodule 포함)를 `third_party/vial-qmk`로 클론합니다.
 
 ## 파일 위치
 
