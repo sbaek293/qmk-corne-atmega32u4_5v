@@ -4,6 +4,9 @@ BOOTLOADER = caterina
 SPLIT_KEYBOARD = yes
 SPLIT_TRANSPORT = serial
 
+RGBLIGHT_ENABLE = yes
+OLED_ENABLE = yes
+
 ifeq ($(KEY_LAYOUT),)
     OPT_DEFS += -DCORNE_LAYOUT_42
 else ifeq ($(KEY_LAYOUT),42)
