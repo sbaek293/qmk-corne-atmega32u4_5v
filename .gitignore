@@ -1,0 +1,5 @@
+third_party/vial-qmk/
+*.hex
+*.bin
+*.elf
+*.map
