@@ -6,6 +6,7 @@ SPLIT_TRANSPORT = serial
 
 RGBLIGHT_ENABLE = yes
 OLED_ENABLE = yes
+WPM_ENABLE = yes
 
 ifeq ($(KEY_LAYOUT),)
     OPT_DEFS += -DCORNE_LAYOUT_42

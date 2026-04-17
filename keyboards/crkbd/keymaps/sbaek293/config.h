@@ -14,6 +14,9 @@
 #define RGBLIGHT_EFFECT_STATIC_GRADIENT
 
 /* OLED (SSD1306 128x32, I2C)
- * 슬레이브 측: crkbd 로고, 마스터 측: 레이어·키 로그 표시
- * (crkbd.c의 oled_task_kb() 기본 구현 사용) */
+ * 마스터: Luna 키보드 펫 + 레이어 아이콘 + 모디파이어 아이콘 (PandaKBLab 참조)
+ * 슬레이브: PandaKBLab 로고 이미지
+ * 폰트: 커스텀 glcdfont (레이어/모디파이어 픽토그램 포함)
+ * OLED_ROTATION_270 = 세로 장착(portrait) 기준 */
 #define OLED_TIMEOUT 30000
+#define OLED_FONT_H "keyboards/crkbd/keymaps/sbaek293/lib/glcdfont.c"

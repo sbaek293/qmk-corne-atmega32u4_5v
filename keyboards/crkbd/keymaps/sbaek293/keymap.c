@@ -1,4 +1,5 @@
 #include QMK_KEYBOARD_H
+#include <stdio.h>
 
 enum layers {
     _BASE,
@@ -22,4 +23,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                    KC_LCTL, KC_SPC,  KC_LALT,            KC_RALT, KC_ENT,  KC_BSPC
     ),
 };
+#endif
+
+#ifdef OLED_ENABLE
+#    include "oled.c"
 #endif
