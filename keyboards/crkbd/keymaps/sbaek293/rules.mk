@@ -7,6 +7,7 @@ SPLIT_TRANSPORT = serial
 RGBLIGHT_ENABLE = yes
 OLED_ENABLE = yes
 WPM_ENABLE = yes
+VIA_ENABLE = yes
 VIAL_ENABLE = yes
 
 ifeq ($(KEY_LAYOUT),)
