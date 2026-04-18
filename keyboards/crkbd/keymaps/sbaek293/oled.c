@@ -21,10 +21,6 @@ oled_rotation_t oled_init_user(oled_rotation_t rotation) {
     return OLED_ROTATION_270;   /* master: portrait (PandaKBLab style)       */
 }
 
-static void render_space(void) {
-    oled_write_P(PSTR("     "), false);
-}
-
 /* ------------------------------------------------------------------ */
 /* KEYBOARD PET (Luna)                                                 */
 /* ------------------------------------------------------------------ */
