@@ -11,18 +11,6 @@
 #ifndef RGBLIGHT_LIMIT_VAL
 #  define RGBLIGHT_LIMIT_VAL 150
 #endif
-#define RGBLIGHT_EFFECT_BREATHING
-#define RGBLIGHT_EFFECT_RAINBOW_SWIRL
-#define RGBLIGHT_EFFECT_STATIC_GRADIENT
-
-/* OLED (SSD1306 128x32, I2C)
- * 마스터: Luna 키보드 펫 + 레이어 아이콘 + 모디파이어 아이콘 (PandaKBLab 참조)
- *         OLED_ROTATION_270 (세로 portrait 장착)
- * 슬레이브: 공식 Corne (crkbd) 로고 raw 비트맵
- *           OLED_ROTATION_0 (가로 landscape 장착)
- * 폰트: 커스텀 glcdfont (레이어/모디파이어 픽토그램 포함, 마스터 전용) */
-#define OLED_TIMEOUT 30000
-#define OLED_FONT_H "keyboards/crkbd/keymaps/sbaek293/lib/glcdfont.c"
 
 /* Vial — dynamic keymap support (vial-qmk 빌드 시 유효)
  * UID는 키보드마다 고유해야 합니다.
